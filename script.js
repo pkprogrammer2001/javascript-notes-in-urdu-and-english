@@ -31,7 +31,7 @@ console.log(rs.asad);
 rs.uni = "vu"
 console.log(rs.uni);
 
-//      primitive
+//      primitive.... woh value jin ki real value copy hoti hai or reference nhi hoti woh primitive type hoti hai string number boolean..
 // reference value ...... (){}[] yeh sub brakets reference value hai inki value agy reference ho jati hai mgr real value ki copy nhi hoti is trhan agr reference ma kooi changing ho gi to main value ma bi change ho jai...
 let fd =[3,3,4,5]; // yeh thi main value
 console.log(fd);
