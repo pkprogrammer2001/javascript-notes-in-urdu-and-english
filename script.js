@@ -18,13 +18,19 @@ var a=20;  // hoisted sirf kaam krti hai var py let py nhi kaam krti...
 
 let yr= "asad"; 
 console.log(yr);
+// array
 let vr =[2,2,3,4,5]
-
+console.log(vr[4]);
+//objects
 let rs ={
   asad:"develop",
   age: 22,
   uni: "virtual university"
 }
+console.log(rs.asad);
+rs.uni = "vu"
+console.log(rs.uni);
+
 //      primitive
 let as = 30
 var ty;
