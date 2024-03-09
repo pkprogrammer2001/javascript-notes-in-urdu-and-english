@@ -124,3 +124,16 @@ bd.forEach(function(val){
   console.log(val+2); // idr jo value ayy gi woh temporary hogi.. is sy real array ki value change nhi hoti.
 });
 console.log(bd) // bd ki real value same hai 
+
+// forin loop for object
+
+let jin1 = {
+  Name:"Asad ullah", // yeh property key ma store hogi..
+  Age:22,
+  Uni:"vu",
+  City:"Rawalpindi"
+}
+
+for (let key in jin1){
+  console.log(key, jin1[key]);
+}
