@@ -116,3 +116,11 @@ bg1.pop();
 console.log(bg); // is ma koi changing nhi hui spread operator ki wjah sy
 console.log(bg1); //sirf is ma changing hui hai 
 
+// forEach Loop ...... forEach loop sirf array k liya use hota hai
+
+let bd =[3,6,7,78,8,9];
+
+bd.forEach(function(val){
+  console.log(val+2); // idr jo value ayy gi woh temporary hogi.. is sy real array change nhi hoga.
+});
+console.log(bd) // bd ki real value same hai 
