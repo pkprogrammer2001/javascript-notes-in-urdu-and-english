@@ -95,14 +95,15 @@ function jin(){
 jin();
 
 // execution context EK imaginary box hai jis function k variable function and lexical enviroment hota hai.....
-
 function abcd(){
-  var adg="jin"; // mgr yeh is child function ma use kr skta hoon is ko lexical enviroment kehta hain....
-  function heloo(){
-    var absd=23;   // is ki value ma upr parent function use nhi kr skta 
+  var adg="jin";// mgr yeh is child function ma use kr skta hoon is ko lexical enviroment kehta hain....
+  function heloo(){   //  var let const jo bi ho is child function ki value upr parent function use nhi kr skta 
     console.log(absd);
     console.log(adg);
   }
+  
   heloo();
+  var absd =23; // is ki value defined isliya q k yeh hoisted krdiya hai isko..
 }
 abcd()
+
