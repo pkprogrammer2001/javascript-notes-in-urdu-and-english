@@ -13,9 +13,11 @@ let sad1 = 20;
 
 // hoisting topic
 
-console.log(a);
-var a=20;
+console.log(a);  // hoisted ma var ki value automatic initialize top py hojati hai jis ki wajah sy agr var delcared krna phela kedr use krly to value undefined ati jisko hoisted kehta hain...
+var a=20;  // hoisted sirf kaam krti hai var py let py nhi kaam krti...
 
+let yr= "asad"; 
+console.log(yr);
 let vr =[2,2,3,4,5]
 
 let rs ={
