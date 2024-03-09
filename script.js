@@ -43,6 +43,8 @@ console.log(fd);
 
 let as = 30
 var ty;
+
+// conditionals 
 if (true){
   console.log("hello world");
 }else{
