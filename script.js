@@ -107,3 +107,12 @@ function abcd(){
 }
 abcd()
 
+// how to copy reference value.
+// spread operator use hota reference value ko copy krna k liya.
+
+let bg = [4,67,74,26,7,3,2]
+bg1=[...bg]; // three dot spread operator hota ha jis value copy hoti hai real value ki reference nhi.. bg ki value bg1 ma copy hui... reference nhi 
+bg1.pop();
+console.log(bg); // is ma koi changing nhi hui spread operator ki wjah sy
+console.log(bg1); //sirf is ma changing hui hai 
+
