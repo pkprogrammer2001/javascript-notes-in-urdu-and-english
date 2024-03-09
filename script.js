@@ -32,6 +32,15 @@ rs.uni = "vu"
 console.log(rs.uni);
 
 //      primitive
+// reference value ...... (){}[] yeh sub brakets reference value hai inki value agy reference ho jati hai mgr real value ki copy nhi hoti is trhan agr reference ma kooi changing ho gi to main value ma bi change ho jai...
+let fd =[3,3,4,5]; // yeh thi main value
+console.log(fd);
+fg=fd // idr maine fg ko fd ki value assign mgr idr fd value reference hogi fg ma.
+fg.pop() // pop fnction sy change fg ma ki to fd ma bi changing hogi is ki value reference value kehta hain array function object ki reference hooti hai.
+console.log(fg);
+console.log(fd);
+
+
 let as = 30
 var ty;
 if (true){
