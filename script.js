@@ -173,3 +173,4 @@ let yb={
 }
 console.log(yb)
 delete yb.color;
+console.log(yb);
