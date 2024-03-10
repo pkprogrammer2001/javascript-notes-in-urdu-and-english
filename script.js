@@ -154,3 +154,12 @@ function abs(ed){
   ed()
 }
 abs(()=>{console.log("how are you bro")})
+
+let to = function(){
+  console.log("keyword")
+}
+to();
+// check array type q k js ma array object hota hai
+let ds =[1,-2,2,3,4,4];
+console.log(typeof ds);
+console.log(Array.isArray(ds)); // is ki value true ayy gi to yeh array hai agr false ayyi to yeh object.
