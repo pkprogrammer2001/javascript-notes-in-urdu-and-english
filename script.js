@@ -163,3 +163,13 @@ to();
 let ds =[1,-2,2,3,4,4];
 console.log(typeof ds);
 console.log(Array.isArray(ds)); // is ki value true ayy gi to yeh array hai agr false ayyi to yeh object.
+
+//delete object props
+
+let yb={
+  car:"civic",
+  model:2022,
+  color:"black"
+}
+console.log(yb)
+delete yb.color;
