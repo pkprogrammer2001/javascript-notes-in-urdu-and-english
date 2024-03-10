@@ -143,3 +143,14 @@ for (let key in jin1){
 setTimeout(function(){
   console.log("hello developer"); // inner function is callback function. main detail event loop... baad ma usko detail ma prhta hain
 },3000);
+
+// first class function
+let vc = (val)=>{ // first class function ma hum function ko ek value ki trhan use kr skta hain
+  console.log("how are you "+ val)
+}
+vc("brother?")
+
+function abs(ed){
+  ed()
+}
+abs(()=>{console.log("how are you bro")})
