@@ -137,3 +137,9 @@ let jin1 = {
 for (let key in jin1){
   console.log(key, jin1[key]);
 }
+
+//setTimeOut callback function example.
+
+setTimeout(function(){
+  console.log("hello developer"); // inner function is callback function. main detail event loop... baad ma usko detail ma prhta hain
+},3000);
