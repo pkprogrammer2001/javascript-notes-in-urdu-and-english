@@ -174,3 +174,21 @@ let yb={
 console.log(yb)
 delete yb.color;
 console.log(yb);
+
+// higher order function
+// example. ......1 ......return function is higher order fnc
+function gf(){
+  return function hj(){
+    console.log( "hello world");
+  }
+}
+const ans =gf();
+ans();
+
+// Example......2.......give function as a parameter in fnc.
+function jg(val){
+  val()
+}
+jg(()=>{
+  console.log("hello sweet bro") 
+})
