@@ -210,4 +210,10 @@ function construct1(name){
 let std3 = new construct1("ghazala");
 let std4 = new construct1("alex");
 
-
+// first class function
+let vt = ()=>{
+  console.log("asad"); // first class fnc means function ko as a variable save krskta
+}
+let da = function(){
+  console.log("asad");
+}
