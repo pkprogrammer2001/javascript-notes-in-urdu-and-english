@@ -201,7 +201,7 @@ function construct(name, age){
   this.uni = "virtual university";
 }
 let std1 = new construct("asad",22); //new sy hum ek new instance bana skta hai constructor function k
-let std2 = new construct("jin", 200); 
+let std2 = new construct("jin", 200); // new keyword sy fnc ko call krta hai to yeh ek object return krta hai 
 
 // example 2
 function construct1(name){
@@ -209,4 +209,5 @@ function construct1(name){
 }
 let std3 = new construct1("ghazala");
 let std4 = new construct1("alex");
+
 
