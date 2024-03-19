@@ -185,7 +185,7 @@ function gf(){
 const ans =gf();
 ans();
 
-// Example......2.......give function as a parameter in fnc.
+// Example......2.......give function as a parameter in fnc. this is called first class function...fnc ko as a parameter pass krna ko bi first class fnc kehta hain
 function jg(val){
   val()
 }
