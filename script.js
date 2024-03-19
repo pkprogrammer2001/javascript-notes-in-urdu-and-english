@@ -217,3 +217,35 @@ let vt = ()=>{
 let da = function(){
   console.log("asad");
 }
+da();
+
+// iife (immediately invoked function expression)
+//example no.1
+// iife hum private value banna k liya use krta hain
+(function(){
+  let bro ="jin"; // private value..
+  console.log("sad")
+})();
+
+//example no.2
+let iff ="iife"; // iife sy hum same name variable bi bana skta hai or same name variable hum different jagah use krskta hain with different value 
+(()=>{          //make iife using fat arrrow function
+  let iff = "bro  kasy ";
+  console.log (iff);
+})();
+console.log(iff);
+
+// example .3 is example ma hum iife ma getter and setter use kr private vale ko change or access kr raha hain.
+
+let smo = (function(){    // is smo variable ma return ki value ayy gi
+  let veer= "Asad"; //yeh private value hai is ko sirf getter or setter sy access kr skta hai 
+
+  return {                      // return ma do function hai getter and setter 
+    getter: function(){         // getter sy value get hoti hai
+      console.log(veer);
+    },
+    setter: function(val){      // setter sy value set hoti hai
+      veer= val;
+    }
+  }
+})()
