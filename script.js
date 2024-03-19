@@ -192,3 +192,21 @@ function jg(val){
 jg(()=>{
   console.log("hello sweet bro") 
 })
+
+//    constructor function....
+// example 1
+function construct(name, age){
+  this.name= name;
+  this.age = age;
+  this.uni = "virtual university";
+}
+let std1 = new construct("asad",22); //new sy hum ek new instance bana skta hai constructor function k
+let std2 = new construct("jin", 200); 
+
+// example 2
+function construct1(name){
+  this.name =name
+}
+let std3 = new construct1("ghazala");
+let std4 = new construct1("alex");
+
