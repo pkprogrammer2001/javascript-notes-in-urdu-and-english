@@ -287,6 +287,7 @@ button.addEventListener("click",function(){
 })
 
 // call apply bind
+//call 
 function cal(val1, val2){ // parameter bi send kr skta hain call ma
   console.log(this, val1, val2); 
 }
@@ -294,6 +295,17 @@ var cal1= {
   name:"call keyword",
   age:10
 }
-cal.call(cal1, 1,2); // is call keyword sy "this" ki value object ban gai hai phela window thi "this" ki value in function
+cal.call(cal1, 100,200); // is call keyword sy "this" ki value object ban gai hai phela window thi "this" ki value in function
+
+// apply same hai call ki trhan just is ma sirf do hi argument pass hota hain
+function aply(val1, val2){ // parameter bi send kr skta hain call ma
+  console.log(this, val1, val2); 
+}
+var aply1= {
+  name:"call keyword",
+  age:10
+}
+aply.apply(aply1, [10,20]); // apply ma sirf do argument pass hota hain first object jis ko this ki value banni hai or dusra array jis ma parameter ki value jaiii gi as a argument agr ma apply ma simple argument send kroo jsy call ma ki ya hai to error ayy ga yeh "CreateListFromArrayLike called on non-object" isliya apply ma argument as a array pass hota hai
+
 
 
