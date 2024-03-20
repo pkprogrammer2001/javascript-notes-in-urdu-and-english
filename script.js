@@ -285,3 +285,15 @@ let button = document.querySelector("button");
 button.addEventListener("click",function(){
   this.style.fontSize= "30px";
 })
+
+// call apply bind
+function cal(val1, val2){ // parameter bi send kr skta hain call ma
+  console.log(this, val1, val2); 
+}
+var cal1= {
+  name:"call keyword",
+  age:10
+}
+cal.call(cal1, 1,2); // is call keyword sy "this" ki value object ban gai hai phela window thi "this" ki value in function
+
+
