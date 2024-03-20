@@ -249,3 +249,14 @@ let smo = (function(){    // is smo variable ma return ki value ayy gi
     }
   }
 })()
+
+// prototype inheritance
+let some1 ={ 
+  name:"bro",
+  age:23
+}
+let vustd = { // is object ki property borrow krna k liya prototype inheritance use krain
+  canstudy: "yes",
+  cancode:"yes"
+}
+some1.__proto__ = vustd; 
