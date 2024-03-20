@@ -260,3 +260,28 @@ let vustd = { // is object ki property borrow krna k liya prototype inheritance 
   cancode:"yes"
 }
 some1.__proto__ = vustd; 
+
+// this keyword
+// value of "this" keyword in global scope 
+console.log(this);   // this ki value global scope ma window hai.
+
+// value of "this" keyword in function scope 
+function hello1(){ // this ki value function scope ma window hai.
+  console.log(this);
+};
+hello1();
+
+// value of "this" keyword in method scope
+let obj1 ={
+  name:"bro",
+  hello2: function(){
+    console.log(this); // this ki value object hota in method... mean this ki value obj1 ayy gi
+  }
+};
+obj1.hello2();
+
+// value of "this" keyword in event listener
+let button = document.querySelector("button");
+button.addEventListener("click",function(){
+  this.style.fontSize= "30px";
+})
