@@ -340,3 +340,6 @@ console.log(fatarrrow2()); // 12 value return ho kr function ma save hojai ga
 let myname = "Asad";
 let profession = "Front-End Developer";
 document.write(`<br> <br> My name is ${myname} and I'm ${profession}`);
+
+//just check 
+console.log ("just checking the pull")
