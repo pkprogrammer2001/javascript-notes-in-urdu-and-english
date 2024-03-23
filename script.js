@@ -320,3 +320,14 @@ bindvar();
 
 
 // es6 topic
+//arrow function
+let fatarrrow = (name)=>{
+  console.log("fat arrow function"+name);
+}
+fatarrrow(" full- stack");
+//if you want, you can also write this way fat arrow with one parameter you just need to remove round bracket from function
+//fat arrow function with one parameter
+let fatarrrow1 = name =>{
+  console.log("fat arrow function"+name);
+}
+fatarrrow1(" full- stack");
