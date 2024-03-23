@@ -335,3 +335,8 @@ fatarrrow1(" full- stack");
 //fat arrow function with impilicit return
 let fatarrrow2 = ()=> 12; // for impilicit return you just need to remove curly bracket from function
 console.log(fatarrrow2()); // 12 value return ho kr function ma save hojai ga
+
+//template literals backticks
+let myname = "Asad";
+let profession = "Front-End Developer";
+document.write(`<br> <br> My name is ${myname} and I'm ${profession}`);
