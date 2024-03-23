@@ -331,3 +331,7 @@ let fatarrrow1 = name =>{
   console.log("fat arrow function"+name);
 }
 fatarrrow1(" full- stack");
+
+//fat arrow function with impilicit return
+let fatarrrow2 = ()=> 12; // for impilicit return you just need to remove curly bracket from function
+console.log(fatarrrow2()); // 12 value return ho kr function ma save hojai ga
