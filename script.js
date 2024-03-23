@@ -369,4 +369,10 @@ let [a1,b1,c1]=arrdes; // is trhan array ki value ko hum variable ma store kr sk
 let [, , , ,arrdes2]= arrdes; // is tareka sy hum jo marzi value ko skip kr apni mrzi ki value ko store kr skta hain
 document.write(arrdes2);
 
-
+//object destructuring 
+let objdes = { 
+  name1: "dude",
+  age: 29
+}
+let {name1,age}=objdes; // object ma sy property ko as a variable krna k liya object destructuring use hota hai
+name1 = "how are you fit boy" 
