@@ -319,3 +319,4 @@ let bindvar = bindfnc.bind(bindfnc1);
 bindvar();
 
 
+// es6 topic
