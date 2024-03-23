@@ -340,3 +340,12 @@ console.log(fatarrrow2()); // 12 value return ho kr function ma save hojai ga
 let myname = "Asad";
 let profession = "Front-End Developer";
 document.write(`<br> <br> My name is ${myname} and I'm ${profession}`);
+
+//default parameter
+function defpara(val=0){ // val=0 is default parameter agr fnc call py koi value nhi ati to default value as a parameter use hoti hai
+  console.log(val);
+}
+defpara(2000);
+defpara(200);
+defpara()
+defpara("bro whats up")
