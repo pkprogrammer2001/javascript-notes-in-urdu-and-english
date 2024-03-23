@@ -355,4 +355,10 @@ let spr = [1,2,3,4,4] // spread operator []{}() unki values copy krna k liya use
 let spr1 =[...spr]
 spr.pop();
 
+// rest operator
+// hum argument ma zyada value pass ho yn user sy zyada pass ho to woh extra arguments ko hum rest operator sy save krta hai
+function restopr(a,b,c, ...d){ // generally 3 parameter ma 3 argument save hojain ga to baki argument ko save krna kliya rest operator use karain ga hum or yeh rest operator value ko as a array save krlyy ga 
+  console.log(a,b,c,d)
+}
+restopr(1,2,3,40,4,5,6)
 
