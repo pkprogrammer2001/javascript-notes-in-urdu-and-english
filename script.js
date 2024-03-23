@@ -362,3 +362,11 @@ function restopr(a,b,c, ...d){ // generally 3 parameter ma 3 argument save hojai
 }
 restopr(1,2,3,40,4,5,6)
 
+// array destructuring 
+
+let arrdes = [1,3,4,56,"<br> array destructing"]
+let [a1,b1,c1]=arrdes; // is trhan array ki value ko hum variable ma store kr skta hain
+let [, , , ,arrdes2]= arrdes; // is tareka sy hum jo marzi value ko skip kr apni mrzi ki value ko store kr skta hain
+document.write(arrdes2);
+
+
