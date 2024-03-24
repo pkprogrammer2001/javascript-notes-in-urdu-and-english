@@ -431,4 +431,13 @@ giveNewPromise1.then(function(data){
   console.log(data)
 })
 
+//async and await // async code jab kuch data lana ho kedr or site yn file sy to async and await use krta hain async code ko js side stack py run krta hain or jab complete hota hai to usko run krta hain await sy code waiting state ma chly jata jab complete ho tb excute hota hai 
+async function abdc(){ 
+  let raw = await fetch("https://randomuser.me/api/");
+  let asynAns =await raw.json();
+  console.log(asynAns)
+}
+
+abdc();
+
 
