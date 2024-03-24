@@ -345,7 +345,7 @@ document.write(`<br> <br> My name is ${myname} and I'm ${profession}`);
 function defpara(val=0, val1 = 0){ // val=0 is default parameter agr fnc call py koi value nhi ati to default value as a parameter use hoti hai
   console.log(val, val1);
 }
-defpara(200);
+defpara(2000);
 defpara(200);
 defpara();
 defpara("bro whats up");
@@ -376,3 +376,59 @@ let objdes = {
 }
 let {name1,age}=objdes; // object ma sy property ko as a variable krna k liya object destructuring use hota hai
 name1 = "how are you fit boy" 
+
+// Asynchronous javaScript
+
+//promises
+let proVar = "1";
+var promisefunc = new Promise((res, rej)=>{ //promises ma resolve or reject state hai agr resolve return huwa to then chala ga or agr reject return huwa to catch
+  if(proVar==1){
+    return res()
+  }else{
+    return rej()
+  }
+})
+promisefunc.then(function(){
+  console.log("resolve state ma hai")
+})
+.catch(function(){ // yeh catch error hand k liya use hota hai 
+  console.log("reject state ma hai")
+})
+
+//example 2
+let promisefunc1 =new Promise((res, rej)=>{
+  let n =Math.floor(Math.random()*10);
+  if(n<5){
+    return res()
+  }else{
+    return rej()
+  }
+})
+promisefunc1
+.then(function(){
+  console.log("below")
+})
+.catch(function(){
+  console.log("above")
+})
+// yeh promises chain hai in real life yeh hum use krta jab font images video ko step by step apni mrzi load krwana ho k kon phela load ho webpage or kon baad ma...
+let promisefunc2 = new Promise((resolve, reject) => {
+  return resolve("i'll become a full stack developer")
+})
+let giveNewPromise = promisefunc2.then(function(data){
+  console.log(data)
+  return new Promise((resolve, reject) => { //yeh return promise ko hum variable save kr age as a resolve or reject state ma use krta hai or is then and catch ma use kr skta hain.
+    return resolve("in next 4 month")
+  })
+})
+let giveNewPromise1= giveNewPromise.then(function(data){ 
+  console.log(data)
+  return new Promise((resolve, reject) => {
+    return resolve("never give up and atleast put some even though out not come")
+  })
+})
+giveNewPromise1.then(function(data){
+  console.log(data)
+})
+
+
