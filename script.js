@@ -440,4 +440,13 @@ async function abdc(){
 
 abdc();
 
+//try and catch error k liya use krta hai or js ma jab error ata hai code us line rok jata hai jis sy next line code ki read nhi hoti is wajah sy hum try and catch hum error k bi pta kr skta hai kedr hai bina code ko roka... full js k code excute hoga
 
+console.log("bro");
+try{
+  console.log(hey); // is line py error hai mgr try and catch sy code ruka nhi
+}
+catch(err1){
+  console.log(err1) // idr error k pta chl raha hai k konsi line py error hai
+}
+console.log("hey");
