@@ -378,6 +378,7 @@ let {name1,age}=objdes; // object ma sy property ko as a variable krna k liya ob
 name1 = "how are you fit boy" 
 
 // Asynchronous javaScript
+//kabhi data kedr fetch krna hota yn kissi code k ans late ana hota to pending ma chly jata hai sync code ma jsy alert jab tk alert nhi ayy ga tb tk baki code nhi run hoga isliya hum async code use krta hain jis sy code line by line read to hota hai mgr jis code ko complete hona ma lagaga to woh bi side stack ma chlta rehta hai jab ans ata hai uska to execute ho jata hai is trhan baki code rokta nhi hai or time bi save hota hai.. 
 
 //promises
 let proVar = "1";
